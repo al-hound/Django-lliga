@@ -4,7 +4,7 @@ from django.db import models
 class Lliga(models.Model):
     nom = models.CharField(max_length=100)
     pais = models.CharField(max_length=50)
-    any_fundacio = models.IntegerField()
+    temporada = models.CharField(max_length=9)
 
     def __str__(self):
         return self.nom
